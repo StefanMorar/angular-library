@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "pack": "ng build button && cd dist/button && npm pack",
+    "publish": "ng build button --prod && cd dist/button && npm publish",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook"
