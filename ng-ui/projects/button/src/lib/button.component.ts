@@ -19,7 +19,7 @@ export class ButtonComponent implements OnInit {
 
   @Input() text = 'Button';
 
-  @Output() clicked: EventEmitter<void> = new EventEmitter();
+  @Output() onClick: EventEmitter<void> = new EventEmitter();
 
   constructor() {}
 
@@ -32,6 +32,6 @@ export class ButtonComponent implements OnInit {
   }
 
   handleButtonClick() {
-    this.clicked.emit();
+    this.onClick.emit();
   }
 }
